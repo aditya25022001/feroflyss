@@ -1,0 +1,274 @@
+#navlinks:hover {
+  color: gray;
+  transition-duration: 0.3s;
+}
+#navlinks {
+  color: white;
+}
+#button_navbar {
+  color: white;
+  background-color: black;
+  border-radius: 0;
+  border: 0.5px ridge white;
+}
+#button_inputs {
+  color: white;
+  margin-top: 43%;
+  background-color: black;
+  border-radius: 0;
+  border: 0.1px ridge black;
+  padding: 14% 100%;
+}
+#button_navbar:hover {
+  color: black;
+  background-color: white;
+  transition-duration: 0.3s;
+}
+#image_overlay {
+  position: absolute;
+  margin-top: -30%;
+  width: 25%;
+  margin-left: 25%;
+  border-radius: 0;
+}
+#button_image {
+  background-color: #fff;
+  color: black;
+  border: 0.5px ridge black;
+  border-radius: 0;
+  font-size: 12px;
+  padding: 3% 10%;
+}
+@font-face {
+  font-family: didot;
+  src: url(./Didot.ttf);
+}
+#title {
+  font-family: didot;
+  font-style: italic;
+}
+#image-one {
+  width: 120vh;
+  height: 80vh;
+}
+#image-two {
+  width: 120vh;
+  height: 80vh;
+  position: relative;
+}
+#inputs_list {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8.5%;
+}
+#checkin,
+#checkout {
+  border-radius: 0;
+  width: 35vh;
+  border: 0.1px ridge black;
+}
+#adults,
+#kids {
+  border-radius: 0;
+  border: 0.1px ridge black;
+  width: 10vh;
+}
+#input_headings {
+  font-size: 1.5vh;
+}
+#about {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0% 10%;
+  width: 80%;
+}
+#block_image {
+  font-style: italic;
+  padding: 2% 10%;
+}
+#services_listgroup,
+#things_listgroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#car_images {
+  height: 80vh;
+}
+#gallery {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20%;
+}
+#gallery_each {
+  width: 25%;
+  margin-right: 1%;
+  height: 50vh;
+}
+#things {
+  display: flex;
+  margin-top: 20%;
+}
+.carousel-indicators li {
+  width: 5px;
+  margin-top: 10%;
+  height: 5px;
+  background-color: black;
+  border-radius: 100%;
+}
+#contact {
+  margin-top: 10%;
+  padding-bottom: 5%;
+  background-color: rgb(241, 241, 241);
+}
+#contact_cred {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#name_email {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+#name,
+#email,
+#subject,
+#message {
+  border-radius: 0;
+  font-weight: 400;
+  color: black;
+}
+#name {
+  margin-right: 2%;
+}
+#form_contact {
+  width: 40%;
+}
+#message {
+  margin-bottom: 2%;
+}
+#contact_button:focus {
+  outline: none;
+  box-shadow: 0 0 0;
+}
+#contact_button {
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  background-color: black;
+  border: 0;
+  border-radius: 0;
+}
+::-webkit-input-placeholder {
+  color: black !important ;
+  font-weight: lighter !important;
+  font-size: 12px !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 !important;
+  outline: none;
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed !important;
+  right: 0;
+  top: 40%;
+  height: 25%;
+  padding: 1%;
+}
+#map_img {
+  width: 100%;
+  height: 40%;
+}
+@media screen and (max-width: 63em) {
+  #image-one,
+  #image-two {
+    width: 50vh;
+    height: 40vh;
+    align-items: center;
+  }
+  #inputs_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+  }
+  #button_inputs {
+    padding: 2% 45%;
+    margin-top: 5%;
+  }
+  #inputs {
+    width: 100%;
+  }
+  #checkin,
+  #checkout,
+  #kids,
+  #adults {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  #input_headings {
+    font-size: 2vh;
+  }
+  #image_overlay {
+    margin-top: 10%;
+    width: 87%;
+    margin-left: 3%;
+  }
+  #services {
+    margin-top: 80%;
+    text-align: center;
+  }
+  #services_listgroup,
+  #things_listgroup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  #car_images {
+    width: 50vh;
+    height: 50vh;
+  }
+  #gallery_each {
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 0 15%;
+    padding-left: 0;
+  }
+  #contact_cred {
+    display: flex;
+    flex-direction: column;
+  }
+  #sep {
+    display: none;
+  }
+  #contact {
+    margin-top: 100%;
+  }
+  #name_email {
+    display: flex;
+    flex-direction: column;
+  }
+  #form_contact {
+    width: 100%;
+  }
+  #name {
+    margin-bottom: 2%;
+  }
+  #sidebar {
+    display: none;
+  }
+  #map_img {
+    width: 100%;
+    height: 20%;
+  }
+}
